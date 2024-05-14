@@ -10,7 +10,7 @@ defmodule CopiWeb.GameLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage game records in your database.</:subtitle>
+        <:subtitle> <%= gettext "Use this form to manage game records in your database." %></:subtitle>
       </.header>
 
       <.simple_form
@@ -35,7 +35,7 @@ defmodule CopiWeb.GameLive.FormComponent do
         </.input>
 
         <:actions>
-          <.button phx-disable-with="Starting game..." class="py-2 px-3"><%= gettext "Create the game" %></.button>
+          <.button phx-disable-with={gettext "Starting game..."} class="py-2 px-3"><%= gettext "Create the game" %></.button>
         </:actions>
       </.simple_form>
     </div>
@@ -74,7 +74,7 @@ defmodule CopiWeb.GameLive.FormComponent do
       {:ok, _game} ->
         {:noreply,
          socket
-         |> put_flash(:info, "Game updated successfully")
+         |> put_flash(:info, gettext "Game updated successfully")
          |> push_redirect(to: socket.assigns.return_to)}
 
       {:error, %Ecto.Changeset{} = changeset} ->
@@ -87,7 +87,7 @@ defmodule CopiWeb.GameLive.FormComponent do
       {:ok, game} ->
         {:noreply,
          socket
-         |> put_flash(:info, "Game created successfully")
+         |> put_flash(:info, gettext "Game created successfully")
          |> push_navigate(to: ~p"/games/#{game.id}")}
 
       {:error, %Ecto.Changeset{} = changeset} ->
