@@ -1,0 +1,103 @@
+## "msgid"s in this file come from POT (.pot) files.
+###
+### Do not add, change, or remove "msgid"s manually here as
+### they're tied to the ones in the corresponding POT file
+### (with the same domain).
+###
+### Use "mix gettext.extract --merge" or "mix gettext.merge"
+### to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: lib/copi_web/components/core_components.ex:484
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr ""
+
+#: lib/copi_web/components/core_components.ex:160
+#, elixir-autogen, elixir-format
+msgid "Attempting to reconnect"
+msgstr ""
+
+#: lib/copi_web/live/game_live/form_component.ex:28
+#, elixir-autogen, elixir-format
+msgid "Choose the type of game you wish to play"
+msgstr ""
+
+#: lib/copi_web/live/game_live/form_component.ex:38
+#, elixir-autogen, elixir-format
+msgid "Create the game"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:4
+#, elixir-autogen, elixir-format
+msgid "Enough already, let's start!"
+msgstr ""
+
+#: lib/copi_web/components/core_components.ex:151
+#, elixir-autogen, elixir-format
+msgid "Error!"
+msgstr ""
+
+#: lib/copi_web/live/game_live/form_component.ex:23
+#, elixir-autogen, elixir-format
+msgid "Give your game session a friendly name so people joining know what's up"
+msgstr ""
+
+#: lib/copi_web/components/core_components.ex:172
+#, elixir-autogen, elixir-format
+msgid "Hang in there while we get back on track"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:81
+#, elixir-autogen, elixir-format
+msgid "Join game as a player"
+msgstr ""
+
+#: lib/copi_web/live/player_live/index.html.heex:28
+#, elixir-autogen, elixir-format
+msgid "Join game as this player"
+msgstr ""
+
+#: lib/copi_web/live/player_live/form_component.ex:29
+#, elixir-autogen, elixir-format
+msgid "Join the game"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:55
+#, elixir-autogen, elixir-format
+msgid "Ok I've read it all, let's go!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/form_component.ex:24
+#, elixir-autogen, elixir-format
+msgid "Player Name"
+msgstr ""
+
+#: lib/copi_web/components/core_components.ex:167
+#, elixir-autogen, elixir-format
+msgid "Something went wrong!"
+msgstr ""
+
+#: lib/copi_web/components/core_components.ex:150
+#, elixir-autogen, elixir-format
+msgid "Success!"
+msgstr ""
+
+#: lib/copi_web/components/core_components.ex:155
+#, elixir-autogen, elixir-format
+msgid "We can't find the internet"
+msgstr ""
+
+#: lib/copi_web/components/core_components.ex:76
+#: lib/copi_web/components/core_components.ex:130
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr ""
+
+#: lib/copi_web/components/layouts/app.html.heex:12
+#, elixir-autogen, elixir-format
+msgid "Start A Game"
+msgstr "Commencez une partie"
