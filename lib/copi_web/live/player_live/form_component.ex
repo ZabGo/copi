@@ -11,7 +11,7 @@ defmodule CopiWeb.PlayerLive.FormComponent do
     <div>
       <.header>
         <%= @title %>
-        <:subtitle>Use this form to manage player records in your database.</:subtitle>
+        <:subtitle> <%= gettext("Use this form to manage player records in your database.") %> </:subtitle>
       </.header>
 
       <.simple_form
@@ -65,7 +65,7 @@ defmodule CopiWeb.PlayerLive.FormComponent do
       {:ok, _player} ->
         {:noreply,
          socket
-         |> put_flash(:info, "Player updated successfully")
+         |> put_flash(:info, gettext("Player updated successfully"))
          |> push_redirect(to: socket.assigns.return_to)}
 
       {:error, %Ecto.Changeset{} = changeset} ->

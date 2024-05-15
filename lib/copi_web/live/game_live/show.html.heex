@@ -3,16 +3,16 @@
 </h2>
 
 <%= if @game.started_at do %>
-<h3>You're watching this game that started at <%= @game.started_at %> with <%= Enum.count(@game.players) %> players</h3>
+<h3> <%= gettext "You're watching this game that started at %{starting_time} with %{number_of_players} players", starting_time: @game.started_at, number_of_players:  Enum.count(@game.players)  %> </h3>
 
   <%= if @game.finished_at do %>
-  <h3>Thanks for playing! This game finished at <%= @game.finished_at %></h3>
+  <h3> <%= gettext "Thanks for playing! This game finished at %{finishing_time}", finishing_time: @game.finished_at %></h3>
   <% end %>
 
   <%= if @requested_round == @game.rounds_played + 1 do %>
-  <h4>Round <strong><%= @game.rounds_played + 1 %></strong> in progress</h4>
+  <h4> <%= gettext("Round %{rounds_played} in progress", rounds_played: @game.rounds_played + 1)  %> </h4>
   <% else %>
-  <h4>Viewing round <strong><%= @requested_round %></strong></h4>
+  <h4> <%= gettext( "Viewing round %{requested_round}", requested_round: @requested_round) %> </h4>
   <% end %>
 
   <div id="table">
@@ -29,7 +29,7 @@
               <span class="badge"><%= Enum.count(player_card.votes) %> / <%= Enum.count(@game.players) - 1 %></span>
             </span>
               <%= if Enum.count(player_card.votes) > (Enum.count(@game.players) - 1) / 2 do %>
-              <br /><span class="scored">Scored!</span>
+              <br /><span class="scored"> <% gettext "Scored!" %> </span>
               <% end %>
             <% else %>
             <span class="vote none">
@@ -40,7 +40,7 @@
           <div class={["drop-zone"] ++ [(if player_card == nil, do: "empty")]}>
 
             <%= if player_card == nil do %>
-              <p class="placeholder">Waiting for <%= player.name %> to play their card</p>
+              <p class="placeholder"> <%= gettext("Waiting for %{player} to play their card", player: player.name) %> </p>
             <% else %>
             <CopiWeb.CardHTML.show card={player_card.card} />
             <% end %>
@@ -69,19 +69,19 @@
   </p>
 
 <% else %>
-<p><em>Share the link to this page with everyone who wants to join or watch.
+<p><em> <%= gettext("Share the link to this page with everyone who wants to join or watch.
 You'll be able to start the game once at least 3 players have joined.
-No more players will be allowed to join once the game is started.</em></p>
+No more players will be allowed to join once the game is started.") %> </em></p>
 
-<button phx-click="start_game" disabled={Enum.count(@game.players) < 3}>Start Game</button>
+<button phx-click="start_game" disabled={Enum.count(@game.players) < 3}> <%= gettext("Start Game") %> </button>
 <p></p>
-<h3>Waiting for players</h3>
+<h3> <%= gettext("Waiting for players") %> </h3>
 
 <.link patch={~p"/games/#{@game.id}/players/new"}>
   <.button><%= gettext("Join game as a player") %></.button>
 </.link>
 
-<p><strong>Don't share your player URL with anyone once you've joined as a player or they'll join as you. You can use it to move your player session to another computer though!</strong></p>
+<p><strong> <%+ gettext("Don't share your player URL with anyone once you've joined as a player or they'll join as you. You can use it to move your player session to another computer though!") %> </strong></p>
 
 <% end %>
 
@@ -89,12 +89,12 @@ No more players will be allowed to join once the game is started.</em></p>
   <thead>
     <tr>
       <th>Name</th>
-      <th class="numeric">Joined At</th>
-      <th class="numeric">Played Cards</th>
-      <th class="numeric">Cards In Hand</th>
-      <th class="numeric">Score</th>
-      <th class="numeric">Highest Card Bonus</th>
-      <th class="numeric">Total Score</th>
+      <th class="numeric"> <%= gettext("Joined At")  %> </th>
+      <th class="numeric"> <%= gettext("Played Cards") %></th>
+      <th class="numeric"> <%= gettext("Cards In Hand") %> </th>
+      <th class="numeric"> <%= gettext("Score") %> </th>
+      <th class="numeric"> <%= gettext("Highest Card Bonus") %> </th>
+      <th class="numeric"> <%= gettext("Total Score") %> </th>
     </tr>
   </thead>
   <tbody id="players">
@@ -115,5 +115,5 @@ No more players will be allowed to join once the game is started.</em></p>
 </table>
 
 <%= if @game.started_at == nil do %>
-<div class="loader">Loading...</div>
+<div class="loader"> <%= gettext("Loading...") %> </div>
 <% end %>

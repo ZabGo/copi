@@ -1,103 +1,386 @@
-## "msgid"s in this file come from POT (.pot) files.
-###
-### Do not add, change, or remove "msgid"s manually here as
-### they're tied to the ones in the corresponding POT file
-### (with the same domain).
-###
-### Use "mix gettext.extract --merge" or "mix gettext.merge"
-### to merge POT files into PO files.
+# # "msgid"s in this file come from POT (.pot) files.
+# ##
+# ## Do not add, change, or remove "msgid"s manually here as
+# ## they're tied to the ones in the corresponding POT file
+# ## (with the same domain).
+# ##
+# ## Use "mix gettext.extract --merge" or "mix gettext.merge"
+# ## to merge POT files into PO files.
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: lib/copi_web/components/core_components.ex:484
-#, elixir-autogen, elixir-format
 msgid "Actions"
 msgstr ""
 
 #: lib/copi_web/components/core_components.ex:160
-#, elixir-autogen, elixir-format
 msgid "Attempting to reconnect"
 msgstr ""
 
 #: lib/copi_web/live/game_live/form_component.ex:28
-#, elixir-autogen, elixir-format
 msgid "Choose the type of game you wish to play"
 msgstr ""
 
 #: lib/copi_web/live/game_live/form_component.ex:38
-#, elixir-autogen, elixir-format
 msgid "Create the game"
 msgstr ""
 
 #: lib/copi_web/live/game_live/index.html.heex:4
-#, elixir-autogen, elixir-format
 msgid "Enough already, let's start!"
-msgstr ""
+msgstr "Bon ça suffit, commençons!"
 
 #: lib/copi_web/components/core_components.ex:151
-#, elixir-autogen, elixir-format
 msgid "Error!"
-msgstr ""
+msgstr "Erreur!"
 
 #: lib/copi_web/live/game_live/form_component.ex:23
-#, elixir-autogen, elixir-format
 msgid "Give your game session a friendly name so people joining know what's up"
-msgstr ""
+msgstr "Donnez un nom sympa à votre session de jeu pour que les participants sachent à quoi s'attendre"
 
 #: lib/copi_web/components/core_components.ex:172
-#, elixir-autogen, elixir-format
 msgid "Hang in there while we get back on track"
 msgstr ""
 
 #: lib/copi_web/live/game_live/show.html.heex:81
-#, elixir-autogen, elixir-format
 msgid "Join game as a player"
 msgstr ""
 
 #: lib/copi_web/live/player_live/index.html.heex:28
-#, elixir-autogen, elixir-format
 msgid "Join game as this player"
 msgstr ""
 
 #: lib/copi_web/live/player_live/form_component.ex:29
-#, elixir-autogen, elixir-format
 msgid "Join the game"
 msgstr ""
 
 #: lib/copi_web/live/game_live/index.html.heex:55
-#, elixir-autogen, elixir-format
 msgid "Ok I've read it all, let's go!"
 msgstr ""
 
 #: lib/copi_web/live/player_live/form_component.ex:24
-#, elixir-autogen, elixir-format
 msgid "Player Name"
-msgstr ""
+msgstr "Nom du joueur"
 
 #: lib/copi_web/components/core_components.ex:167
-#, elixir-autogen, elixir-format
 msgid "Something went wrong!"
 msgstr ""
 
 #: lib/copi_web/components/core_components.ex:150
-#, elixir-autogen, elixir-format
 msgid "Success!"
 msgstr ""
 
 #: lib/copi_web/components/core_components.ex:155
-#, elixir-autogen, elixir-format
 msgid "We can't find the internet"
 msgstr ""
 
 #: lib/copi_web/components/core_components.ex:76
 #: lib/copi_web/components/core_components.ex:130
-#, elixir-autogen, elixir-format
 msgid "close"
 msgstr ""
 
 #: lib/copi_web/components/layouts/app.html.heex:12
-#, elixir-autogen, elixir-format
+#: lib/copi_web/controllers/page_html/home.html.heex:37
 msgid "Start A Game"
 msgstr "Commencez une partie"
+
+#: lib/copi_web/live/game_live/index.html.heex:48
+msgid "Closure"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:28
+msgid "Create a game in Copi using the button below"
+msgstr "Créez un jeu dans Copi en utilisant le bouton ci-dessous"
+
+#: lib/copi_web/live/game_live/index.html.heex:51
+msgid "Create user stories, specifications and test cases as required for your development methodology"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:35
+msgid "Each player must play a card in the same way; if you have any card of the matching lead suit you must play one of those, otherwise they can play a card from any other suit. Only a higher card of the same suit, or the highest card in the trump suit Cornucopia, wins the round"
+msgstr "Chaque joueur doit jouer une carte de la même manière ; s’ils ont une carte de la même couleur que la carte initiale, ils doivent jouer une de celles-ci, sinon ils peuvent jouer une carte de n’importe quelle autre couleur. Seule une carte supérieure de la même couleur, ou la carte la plus élevée de la couleur d’atout Cornucopia, remporte la manche."
+
+#: lib/copi_web/live/game_live/form_component.ex:90
+msgid "Game created successfully"
+msgstr "Le jeu a été créé avec succès"
+
+#: lib/copi_web/live/game_live/form_component.ex:77
+msgid "Game updated successfully"
+msgstr "Le jeu a été mis à jour avec succès"
+
+#: lib/copi_web/live/game_live/index.html.heex:21
+msgid "Have a data flow diagram, or make one!"
+msgstr "Utilisez un diagramme de flux de données, ou en faites-vous un !"
+
+#: lib/copi_web/live/game_live/index.html.heex:23
+msgid "Have some prizes to hand (gold stars, chocolate, pizza, beer, flowers, whatever you need)"
+msgstr "Ayez quelques prix à disposition (étoiles d’or, chocolat, pizza, bière, fleurs, ce dont vous avez besoin)."
+
+#: lib/copi_web/live/game_live/index.html.heex:20
+msgid "Identify an application or application process to review; this might be a concept, design or an actual implementation"
+msgstr "Identifiez une application ou un processus d’application à examiner ; cela pourrait être un concept, une conception ou une implémentation réelle"
+
+#: lib/copi_web/live/game_live/index.html.heex:22
+msgid "Invite a group of 3-6 people on your team who know what's been built, or what's going to be built, inside out"
+msgstr "Invitez un groupe de 3 à 6 personnes de votre équipe qui connaissent parfaitement ce qui a été construit ou ce qui va être construit"
+
+#: lib/copi_web/live/game_live/index.ex:27
+msgid "Listing Games"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:34
+msgid "Once a card is played, the player must read it out aloud, and explain how (or not) the threat could apply (the player gets a point for attacks that work, and the group thinks it is an actionable bug) - don’t try to think of mitigations at this stage, and don’t exclude a threat just because it is believed it is already mitigated - someone record the card on the score sheet"
+msgstr "Une fois qu’une carte est jouée, le joueur doit la lire à voix haute et expliquer comment la menace pourrait s’appliquer (ou non). Le joueur obtient un point pour les attaques qui fonctionnent et le groupe pense qu’il s’agit d’un bogue exploitable. Ne tentez pas de réfléchir à des atténuations à ce stade, et n’excluez pas une menace simplement parce qu’on pense qu’elle est déjà atténuée. Quelqu’un enregistre la carte sur la feuille de score"
+
+#: lib/copi_web/live/game_live/index.html.heex:44
+msgid "Once all cards have been played, whoever has the most points wins"
+msgstr "Une fois que toutes les cartes ont été jouées, celui qui a le plus de points remporte la partie"
+
+#: lib/copi_web/live/game_live/index.html.heex:31
+msgid "Once at least 3 players have joined you can start the game (make sure all your players have joined!)"
+msgstr "Une fois qu’au moins 3 joueurs ont rejoint, vous pouvez commencer la partie (assurez-vous que tous vos joueurs ont rejoint !)"
+
+#: lib/copi_web/live/game_live/index.html.heex:26
+msgid "Play"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:30
+msgid "Players can click the button to join as a player"
+msgstr "Les joueurs peuvent cliquer sur le bouton pour rejoindre en tant que joueur"
+
+#: lib/copi_web/live/game_live/index.html.heex:18
+msgid "Preparations"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:37
+msgid "Repeat until all the cards are played"
+msgstr "Répétez jusqu’à ce que toutes les cartes soient jouées"
+
+#: lib/copi_web/live/game_live/index.html.heex:50
+msgid "Review all the applicable threats and the matching security requirements"
+msgstr "Passer en revue toutes les menaces applicables et les exigences de sécurité correspondantes"
+
+#: lib/copi_web/live/game_live/index.html.heex:42
+msgid "Score +1 for each card you can identify as a valid threat to the application under consideration"
+msgstr "Ajoutez +1 pour chaque carte que vous pouvez identifier comme une menace valide pour l’application en question"
+
+#: lib/copi_web/live/game_live/index.html.heex:43
+msgid "Score +1 if you win a round"
+msgstr "Ajoutez +1 si vous remportez une manche."
+
+#: lib/copi_web/live/game_live/show.html.heex:32
+#: lib/copi_web/live/player_live/show.html.heex:38
+#: lib/copi_web/live/player_live/show.html.heex:54
+msgid "Scored!"
+msgstr "Bien joué !"
+
+#: lib/copi_web/live/game_live/index.html.heex:40
+msgid "Scoring"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:29
+msgid "Share the link to the game page with everyone playing or watching"
+msgstr "Partagez le lien vers la page du jeu avec tous les joueurs ou spectateurs"
+
+#: lib/copi_web/live/game_live/form_component.ex:38
+msgid "Starting game..."
+msgstr "Début de la partie…"
+
+#: lib/copi_web/live/game_live/show.html.heex:9
+msgid "Thanks for playing! This game finished at %{finishing_time}"
+msgstr "Merci d’avoir joué ! Cette partie s’est terminée à"
+
+#: lib/copi_web/live/game_live/index.html.heex:36
+msgid "The player who wins the round, leads the next round (i.e., they play first), and thus define the next lead suit"
+msgstr "Le joueur qui remporte la manche mène la manche suivante (c’est-à-dire qu’il joue en premier) et définit ainsi la prochaine couleur d’atout"
+
+#: lib/copi_web/live/game_live/index.html.heex:45
+msgid "The winner receives fabulous prizes"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:33
+msgid "To begin, choose a player randomly who will play the first card - they can play any card from their hand except from the trump suit - Cornucopia"
+msgstr ""
+
+#: lib/copi_web/live/game_live/form_component.ex:13
+msgid "Use this form to manage game records in your database."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:6
+msgid "You're watching this game that started at %{starting_time} with %{number_of_players} players"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:100
+msgid "(you should play a card from the %{category} suit, if you have one)"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:94
+msgid "Cards In Hand"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:32
+msgid "Click the Start Game button and Copi will shuffle and deal out the cards"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:84
+msgid "Don't share your player URL with anyone once you've joined as a player or they'll join as you. You can use it to move your player session to another computer though!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:69
+msgid "Drop a card from your hand here to play it"
+msgstr ""
+
+#: lib/copi_web/live/player_live/index.ex:20
+msgid "Edit Player"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:86
+msgid "Finish game"
+msgstr ""
+
+#: lib/copi_web/components/layouts/app.html.heex:14
+msgid "Game Cards"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:11
+msgid "Go to game summary"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:16
+msgid "Hi %{player_name}, let's play!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:119
+msgid "Hi %{player_name}, waiting for the game to start..."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:96
+msgid "Highest Card Bonus"
+msgstr ""
+
+#: lib/copi_web/components/layouts/app.html.heex:11
+msgid "Home"
+msgstr ""
+
+#: lib/copi_web/controllers/page_html/home.html.heex:38
+msgid "How do we play?"
+msgstr ""
+
+#: lib/copi_web/components/layouts/app.html.heex:13
+msgid "Join A Game"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:92
+msgid "Joined At"
+msgstr ""
+
+#: lib/copi_web/controllers/page_html/home.html.heex:25
+msgid "Latest updates"
+msgstr ""
+
+#: lib/copi_web/live/player_live/index.ex:32
+msgid "Listing Players"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:118
+#: lib/copi_web/live/player_live/show.html.heex:120
+msgid "Loading..."
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:83
+msgid "Make sure everyone's finished voting on cards before moving on!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/index.ex:26
+msgid "New Player"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:88
+msgid "Next round"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:93
+msgid "Played Cards"
+msgstr ""
+
+#: lib/copi_web/live/player_live/form_component.ex:68
+msgid "Player updated successfully"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:18
+msgid "Round %{round_number}"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:13
+msgid "Round %{rounds_played} in progress"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:95
+msgid "Score"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:72
+msgid ""
+"Share the link to this page with everyone who wants to join or watch.\n"
+"You'll be able to start the game once at least 3 players have joined.\n"
+"No more players will be allowed to join once the game is started."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:76
+#, fuzzy
+msgid "Start Game"
+msgstr "Commencez une partie"
+
+#: lib/copi_web/live/player_live/show.html.heex:9
+msgid "Thanks for playing, %{player_name}! This game finished at %{finished_time}"
+msgstr ""
+
+#: lib/copi_web/controllers/page_html/home.html.heex:34
+msgid "Threat modelling for everyone everywhere"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:98
+msgid "Tip: Drag a card onto the table to play a card in this round!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:95
+msgid "Tip: You've played a card in this round, vote on other peoples' cards and described attacks!"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:97
+msgid "Total Score"
+msgstr ""
+
+#: lib/copi_web/controllers/page_html/home.html.heex:35
+msgid "Uncover the security flaws in your software's design before the bad guys do it for you! Get your team together on a call or in a room and use OWASP Cornucopia Web & Mobile and Elevation of Privilege card decks to guide your threat modelling."
+msgstr ""
+
+#: lib/copi_web/live/player_live/form_component.ex:14
+msgid "Use this form to manage player records in your database."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:15
+msgid "Viewing round %{requested_round}"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:71
+msgid "Waiting for %{player_name} to play their card"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:43
+msgid "Waiting for %{player} to play their card"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:78
+msgid "Waiting for players"
+msgstr ""

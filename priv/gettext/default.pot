@@ -98,6 +98,365 @@ msgid "close"
 msgstr ""
 
 #: lib/copi_web/components/layouts/app.html.heex:12
+#: lib/copi_web/controllers/page_html/home.html.heex:37
 #, elixir-autogen, elixir-format
 msgid "Start A Game"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:48
+#, elixir-autogen, elixir-format
+msgid "Closure"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:28
+#, elixir-autogen, elixir-format
+msgid "Create a game in Copi using the button below"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:51
+#, elixir-autogen, elixir-format
+msgid "Create user stories, specifications and test cases as required for your development methodology"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:35
+#, elixir-autogen, elixir-format
+msgid "Each player must play a card in the same way; if you have any card of the matching lead suit you must play one of those, otherwise they can play a card from any other suit. Only a higher card of the same suit, or the highest card in the trump suit Cornucopia, wins the round"
+msgstr ""
+
+#: lib/copi_web/live/game_live/form_component.ex:90
+#, elixir-autogen, elixir-format
+msgid "Game created successfully"
+msgstr ""
+
+#: lib/copi_web/live/game_live/form_component.ex:77
+#, elixir-autogen, elixir-format
+msgid "Game updated successfully"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:21
+#, elixir-autogen, elixir-format
+msgid "Have a data flow diagram, or make one!"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:23
+#, elixir-autogen, elixir-format
+msgid "Have some prizes to hand (gold stars, chocolate, pizza, beer, flowers, whatever you need)"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:20
+#, elixir-autogen, elixir-format
+msgid "Identify an application or application process to review; this might be a concept, design or an actual implementation"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:22
+#, elixir-autogen, elixir-format
+msgid "Invite a group of 3-6 people on your team who know what's been built, or what's going to be built, inside out"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.ex:27
+#, elixir-autogen, elixir-format
+msgid "Listing Games"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:34
+#, elixir-autogen, elixir-format
+msgid "Once a card is played, the player must read it out aloud, and explain how (or not) the threat could apply (the player gets a point for attacks that work, and the group thinks it is an actionable bug) - don’t try to think of mitigations at this stage, and don’t exclude a threat just because it is believed it is already mitigated - someone record the card on the score sheet"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:44
+#, elixir-autogen, elixir-format
+msgid "Once all cards have been played, whoever has the most points wins"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:31
+#, elixir-autogen, elixir-format
+msgid "Once at least 3 players have joined you can start the game (make sure all your players have joined!)"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:26
+#, elixir-autogen, elixir-format
+msgid "Play"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:30
+#, elixir-autogen, elixir-format
+msgid "Players can click the button to join as a player"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:18
+#, elixir-autogen, elixir-format
+msgid "Preparations"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:37
+#, elixir-autogen, elixir-format
+msgid "Repeat until all the cards are played"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:50
+#, elixir-autogen, elixir-format
+msgid "Review all the applicable threats and the matching security requirements"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:42
+#, elixir-autogen, elixir-format
+msgid "Score +1 for each card you can identify as a valid threat to the application under consideration"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:43
+#, elixir-autogen, elixir-format
+msgid "Score +1 if you win a round"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:32
+#: lib/copi_web/live/player_live/show.html.heex:38
+#: lib/copi_web/live/player_live/show.html.heex:54
+#, elixir-autogen, elixir-format
+msgid "Scored!"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:40
+#, elixir-autogen, elixir-format
+msgid "Scoring"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:29
+#, elixir-autogen, elixir-format
+msgid "Share the link to the game page with everyone playing or watching"
+msgstr ""
+
+#: lib/copi_web/live/game_live/form_component.ex:38
+#, elixir-autogen, elixir-format
+msgid "Starting game..."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:9
+#, elixir-autogen, elixir-format
+msgid "Thanks for playing! This game finished at %{finishing_time}"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:36
+#, elixir-autogen, elixir-format
+msgid "The player who wins the round, leads the next round (i.e., they play first), and thus define the next lead suit"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:45
+#, elixir-autogen, elixir-format
+msgid "The winner receives fabulous prizes"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:33
+#, elixir-autogen, elixir-format
+msgid "To begin, choose a player randomly who will play the first card - they can play any card from their hand except from the trump suit - Cornucopia"
+msgstr ""
+
+#: lib/copi_web/live/game_live/form_component.ex:13
+#, elixir-autogen, elixir-format
+msgid "Use this form to manage game records in your database."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:6
+#, elixir-autogen, elixir-format
+msgid "You're watching this game that started at %{starting_time} with %{number_of_players} players"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:100
+#, elixir-autogen, elixir-format
+msgid "(you should play a card from the %{category} suit, if you have one)"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:94
+#, elixir-autogen, elixir-format
+msgid "Cards In Hand"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:32
+#, elixir-autogen, elixir-format
+msgid "Click the Start Game button and Copi will shuffle and deal out the cards"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:84
+#, elixir-autogen, elixir-format
+msgid "Don't share your player URL with anyone once you've joined as a player or they'll join as you. You can use it to move your player session to another computer though!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:69
+#, elixir-autogen, elixir-format
+msgid "Drop a card from your hand here to play it"
+msgstr ""
+
+#: lib/copi_web/live/player_live/index.ex:20
+#, elixir-autogen, elixir-format
+msgid "Edit Player"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:86
+#, elixir-autogen, elixir-format
+msgid "Finish game"
+msgstr ""
+
+#: lib/copi_web/components/layouts/app.html.heex:14
+#, elixir-autogen, elixir-format
+msgid "Game Cards"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:11
+#, elixir-autogen, elixir-format
+msgid "Go to game summary"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:16
+#, elixir-autogen, elixir-format
+msgid "Hi %{player_name}, let's play!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:119
+#, elixir-autogen, elixir-format
+msgid "Hi %{player_name}, waiting for the game to start..."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:96
+#, elixir-autogen, elixir-format
+msgid "Highest Card Bonus"
+msgstr ""
+
+#: lib/copi_web/components/layouts/app.html.heex:11
+#, elixir-autogen, elixir-format
+msgid "Home"
+msgstr ""
+
+#: lib/copi_web/controllers/page_html/home.html.heex:38
+#, elixir-autogen, elixir-format
+msgid "How do we play?"
+msgstr ""
+
+#: lib/copi_web/components/layouts/app.html.heex:13
+#, elixir-autogen, elixir-format
+msgid "Join A Game"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:92
+#, elixir-autogen, elixir-format
+msgid "Joined At"
+msgstr ""
+
+#: lib/copi_web/controllers/page_html/home.html.heex:25
+#, elixir-autogen, elixir-format
+msgid "Latest updates"
+msgstr ""
+
+#: lib/copi_web/live/player_live/index.ex:32
+#, elixir-autogen, elixir-format
+msgid "Listing Players"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:118
+#: lib/copi_web/live/player_live/show.html.heex:120
+#, elixir-autogen, elixir-format
+msgid "Loading..."
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:83
+#, elixir-autogen, elixir-format
+msgid "Make sure everyone's finished voting on cards before moving on!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/index.ex:26
+#, elixir-autogen, elixir-format
+msgid "New Player"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:88
+#, elixir-autogen, elixir-format
+msgid "Next round"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:93
+#, elixir-autogen, elixir-format
+msgid "Played Cards"
+msgstr ""
+
+#: lib/copi_web/live/player_live/form_component.ex:68
+#, elixir-autogen, elixir-format
+msgid "Player updated successfully"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:18
+#, elixir-autogen, elixir-format
+msgid "Round %{round_number}"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:13
+#, elixir-autogen, elixir-format
+msgid "Round %{rounds_played} in progress"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:95
+#, elixir-autogen, elixir-format
+msgid "Score"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:72
+#, elixir-autogen, elixir-format
+msgid "Share the link to this page with everyone who wants to join or watch.\nYou'll be able to start the game once at least 3 players have joined.\nNo more players will be allowed to join once the game is started."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:76
+#, elixir-autogen, elixir-format
+msgid "Start Game"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:9
+#, elixir-autogen, elixir-format
+msgid "Thanks for playing, %{player_name}! This game finished at %{finished_time}"
+msgstr ""
+
+#: lib/copi_web/controllers/page_html/home.html.heex:34
+#, elixir-autogen, elixir-format
+msgid "Threat modelling for everyone everywhere"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:98
+#, elixir-autogen, elixir-format
+msgid "Tip: Drag a card onto the table to play a card in this round!"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:95
+#, elixir-autogen, elixir-format
+msgid "Tip: You've played a card in this round, vote on other peoples' cards and described attacks!"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:97
+#, elixir-autogen, elixir-format
+msgid "Total Score"
+msgstr ""
+
+#: lib/copi_web/controllers/page_html/home.html.heex:35
+#, elixir-autogen, elixir-format
+msgid "Uncover the security flaws in your software's design before the bad guys do it for you! Get your team together on a call or in a room and use OWASP Cornucopia Web & Mobile and Elevation of Privilege card decks to guide your threat modelling."
+msgstr ""
+
+#: lib/copi_web/live/player_live/form_component.ex:14
+#, elixir-autogen, elixir-format
+msgid "Use this form to manage player records in your database."
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:15
+#, elixir-autogen, elixir-format
+msgid "Viewing round %{requested_round}"
+msgstr ""
+
+#: lib/copi_web/live/player_live/show.html.heex:71
+#, elixir-autogen, elixir-format
+msgid "Waiting for %{player_name} to play their card"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:43
+#, elixir-autogen, elixir-format
+msgid "Waiting for %{player} to play their card"
+msgstr ""
+
+#: lib/copi_web/live/game_live/show.html.heex:78
+#, elixir-autogen, elixir-format
+msgid "Waiting for players"
 msgstr ""

@@ -22,7 +22,7 @@
           <img class="h-11" src="/images/owasp-logomark.png" alt="OWASP Logo">
           <div class="mt-24 sm:mt-32 lg:mt-16">
             <a href="#" class="inline-flex space-x-6">
-              <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">Latest updates</span>
+              <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20"> <%= gettext("Latest updates") %> </span>
               <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-300">
                 <span>Cornucopia Mobile deck now available</span>
                 <svg class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -31,12 +31,11 @@
               </span>
             </a>
           </div>
-          <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Threat modelling for everyone everywhere</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-300">
-          Uncover the security flaws in your software's design before the bad guys do it for you! Get your team together on a call or in a room and use OWASP Cornucopia Web & Mobile and Elevation of Privilege card decks to guide your threat modelling.</p>
+          <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl"> <%= gettext("Threat modelling for everyone everywhere") %> </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-300"> <%= gettext("Uncover the security flaws in your software's design before the bad guys do it for you! Get your team together on a call or in a room and use OWASP Cornucopia Web & Mobile and Elevation of Privilege card decks to guide your threat modelling.") %> </p>
           <div class="mt-10 flex items-center gap-x-6">
             <a href="/games/new" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"><%= gettext("Start A Game") %></a>
-            <a href="#" class="text-sm font-semibold leading-6 text-white">How do we play? <span aria-hidden="true">→</span></a>
+            <a href="#" class="text-sm font-semibold leading-6 text-white"> <%= gettext("How do we play?") %>  <span aria-hidden="true">→</span></a>
           </div>
         </div>
         <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">

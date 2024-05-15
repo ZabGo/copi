@@ -17,38 +17,38 @@
 
 <h2> <% gettext "Preparations" %> </h2>
 <ol>
-  <li> <% gettext "Identify an application or application process to review; this might be a concept, design or an actual implementation" %></li>
-  <li><% gettext "Have a data flow diagram, or make one!" %></li>
-  <li> <% gettext "Invite a group of 3-6 people on your team who know what's been built, or what's going to be built, inside out" %> </li>
-  <li> <% gettext "Have some prizes to hand (gold stars, chocolate, pizza, beer, flowers, whatever you need)" %> </li>
+  <li> <%= gettext "Identify an application or application process to review; this might be a concept, design or an actual implementation" %></li>
+  <li><%= gettext "Have a data flow diagram, or make one!" %></li>
+  <li> <%= gettext "Invite a group of 3-6 people on your team who know what's been built, or what's going to be built, inside out" %> </li>
+  <li> <%= gettext "Have some prizes to hand (gold stars, chocolate, pizza, beer, flowers, whatever you need)" %> </li>
 </ol>
 
-<h2> <% gettext "Play" %></h2>
+<h2> <%= gettext "Play" %></h2>
 <ol>
-  <li> <% gettext "Create a game in Copi using the button below" %> </li>
-  <li>Share the link to the game page with everyone playing or watching</li>
-  <li>Players can click the button to join as a player</li>
-  <li>Once at least 3 players have joined you can start the game (make sure all your players have joined!)</li>
-  <li>Click the Start Game button and Copi will shuffle and deal out the cards</li>
-  <li>To begin, choose a player randomly who will play the first card - they can play any card from their hand except from the trump suit - Cornucopia</li>
-  <li>Once a card is played, the player must read it out aloud, and explain how (or not) the threat could apply (the player gets a point for attacks that work, and the group thinks it is an actionable bug) - don’t try to think of mitigations at this stage, and don’t exclude a threat just because it is believed it is already mitigated - someone record the card on the score sheet</li>
-  <li>Each player must play a card in the same way; if you have any card of the matching lead suit you must play one of those, otherwise they can play a card from any other suit. Only a higher card of the same suit, or the highest card in the trump suit Cornucopia, wins the round</li>
-  <li>The player who wins the round, leads the next round (i.e., they play first), and thus define the next lead suit</li>
-  <li>Repeat until all the cards are played</li>
+  <li> <%= gettext "Create a game in Copi using the button below" %> </li>
+  <li> <%= gettext "Share the link to the game page with everyone playing or watching" %></li>
+  <li> <%= gettext "Players can click the button to join as a player" %> </li>
+  <li> <%= gettext "Once at least 3 players have joined you can start the game (make sure all your players have joined!)" %> </li>
+  <li> <%= gettext "Click the Start Game button and Copi will shuffle and deal out the cards"%> </li>
+  <li> <%= gettext "To begin, choose a player randomly who will play the first card - they can play any card from their hand except from the trump suit - Cornucopia" %> </li>
+  <li> <%= gettext "Once a card is played, the player must read it out aloud, and explain how (or not) the threat could apply (the player gets a point for attacks that work, and the group thinks it is an actionable bug) - don’t try to think of mitigations at this stage, and don’t exclude a threat just because it is believed it is already mitigated - someone record the card on the score sheet" %> </li>
+  <li> <%= gettext "Each player must play a card in the same way; if you have any card of the matching lead suit you must play one of those, otherwise they can play a card from any other suit. Only a higher card of the same suit, or the highest card in the trump suit Cornucopia, wins the round" %> </li>
+  <li> <%= gettext "The player who wins the round, leads the next round (i.e., they play first), and thus define the next lead suit" %> </li>
+  <li> <%= gettext "Repeat until all the cards are played" %> </li>
 </ol>
 
-<h2>Scoring</h2>
+<h2> <%= gettext "Scoring" %> </h2>
 <ol>
-  <li>Score +1 for each card you can identify as a valid threat to the application under consideration</li>
-  <li>Score +1 if you win a round</li>
-  <li>Once all cards have been played, whoever has the most points wins</li>
-  <li>The winner receives fabulous prizes</li>
+  <li> <%= gettext "Score +1 for each card you can identify as a valid threat to the application under consideration" %> </li>
+  <li> <%= gettext "Score +1 if you win a round" %> </li>
+  <li> <%= gettext "Once all cards have been played, whoever has the most points wins" %> </li>
+  <li> <%= gettext "The winner receives fabulous prizes" %> </li>
 </ol>
 
-<h2>Closure</h2>
+<h2> <%= gettext "Closure" %> </h2>
 <ol>
-  <li>Review all the applicable threats and the matching security requirements</li>
-  <li>Create user stories, specifications and test cases as required for your development methodology</li>
+  <li> <%= gettext "Review all the applicable threats and the matching security requirements" %> </li>
+  <li> <%= gettext "Create user stories, specifications and test cases as required for your development methodology" %> </li>
 </ol>
 
 <.link patch={~p"/games/new"}>
