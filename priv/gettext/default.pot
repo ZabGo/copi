@@ -460,3 +460,18 @@ msgstr ""
 #, elixir-autogen, elixir-format
 msgid "Waiting for players"
 msgstr ""
+
+#: lib/copi_web/live/game_live/index.html.heex:1
+#, elixir-autogen, elixir-format
+msgid "How to play"
+msgstr ""
+
+#: lib/copi_web/live/game_live/index.ex:21
+#, elixir-autogen, elixir-format
+msgid "New Game"
+msgstr ""
+
+#: lib/copi_web/components/layouts/app.html.heex:51
+#, elixir-autogen, elixir-format
+msgid "Welcome to OWASP Copi!"
+msgstr ""
