@@ -27,9 +27,20 @@ defmodule CopiWeb.GameLive.FormComponent do
           type="select"
           label={gettext "Choose the type of game you wish to play"}
           options={[
-              {"Cornucopia Web (for web apps and APIs)", "ecommerce"},
+              {"Cornucopia Web (for web apps and APIs)", "webapp"},
               {"Cornucopia Mobile (for mobile apps)", "masvs"},
               {"Elevation of Privilege (for cloud platforms, infrastructure, apps, anything!)", "eop"},
+          ]}
+          >
+        </.input>
+
+              <.input
+          field={@form[:language]}
+          type="select"
+          label={gettext "Choose your language"}
+          options={[
+              {"English", "EN"},
+              {"French", "FR"},
           ]}
           >
         </.input>
@@ -83,6 +94,7 @@ defmodule CopiWeb.GameLive.FormComponent do
   end
 
   defp save_game(socket, :new, game_params) do
+    
     case Cornucopia.create_game(game_params) do
       {:ok, game} ->
         {:noreply,

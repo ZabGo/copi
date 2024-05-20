@@ -215,8 +215,9 @@ defmodule Copi.Cornucopia do
     Card |> order_by(:id) |> Repo.all()
   end
 
-  def list_cards_shuffled(edition) do
-    Card |> where(edition: ^edition) |> order_by(fragment("RANDOM()")) |> Repo.all()
+  def list_cards_shuffled(edition, language) do
+
+    Card |> where(language: ^language) |> where(edition: ^edition)  |> order_by(fragment("RANDOM()")) |> Repo.all()
   end
 
   @doc """

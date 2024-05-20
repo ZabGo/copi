@@ -21,12 +21,15 @@ defmodule CopiWeb.LiveHelpers do
     live_component(CopiWeb.ModalComponent, modal_opts)
   end
 
+  def display_game_session(edition) do
+    case edition do
+      "webapp" -> "Web Session:"
+      "masvs" -> "Mobile Session:"
+      _ -> "EoP Session:"
+    end
+  end
 
-    def display_game_session(edition) do
-      case edition do
-        "ecommerce" -> "Web Session:"
-        "masvs" -> "Mobile Session:"
-        _ -> "EoP Session:"
-      end
+  def get_suit_code_from_card_id(card_id) do
+    String.slice(card_id, 0, String.length(card_id) - 1)
   end
 end
