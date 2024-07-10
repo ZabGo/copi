@@ -22,6 +22,8 @@ defmodule CopiWeb.GameLive.CreateGameForm do
       >
         <.input field={@form[:name]} type="text" label={gettext "Give your game session a friendly name so people joining know what's up"} />
 
+
+      <div class="flex justify-between">
         <.input
           field={@form[:edition]}
           type="select"
@@ -33,6 +35,18 @@ defmodule CopiWeb.GameLive.CreateGameForm do
           ]}
           >
         </.input>
+
+        <.input
+          field={@form[:language]}
+          type="select"
+          label={gettext "Choose your language:"}
+          options={display_language_with_flags(["gb", "fr", "es", "pt"])}
+          >
+        </.input>
+      </div>
+
+
+
 
         <:actions>
           <.primary_button phx-disable-with="Starting game..." class=""><%= gettext "Create the game" %></.primary_button>
@@ -94,4 +108,17 @@ defmodule CopiWeb.GameLive.CreateGameForm do
         {:noreply, assign_form(socket, changeset)}
     end
   end
+
+    def display_language_with_flags(languages) do
+      Enum.map(languages, fn country -> {to_flag_emoji(country), country} end)
+    end
+
+  def to_flag_emoji(code) do
+    code
+    |> String.upcase()
+    |> String.to_charlist()
+    |> Enum.map(&(&1 + 127397))
+    |> to_string()
+  end
+
 end
