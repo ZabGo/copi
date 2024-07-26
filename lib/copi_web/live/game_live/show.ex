@@ -47,10 +47,8 @@ defmodule CopiWeb.GameLive.Show do
   def handle_event("start_game", _, socket) do
     game = socket.assigns.game
 
-    if game.started_at do
-      # Do nothing, game's already started
-    else
-      all_cards = Copi.Cornucopia.list_cards_shuffled(game.edition)
+    unless game.started_at do
+      all_cards = Copi.Cornucopia.list_cards_shuffled(game.edition, game.language)
       players = game.players
 
       all_cards
