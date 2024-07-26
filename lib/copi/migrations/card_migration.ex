@@ -17,16 +17,19 @@ defmodule Copi.CardMigration do
         language = cards["meta"]["language"]
         version = cards["meta"]["version"]
         for suit <- cards["suits"] do
+          suit_id = if Map.has_key?(suit, "id"), do: suit["id"], else: ""
           for card <- suit["cards"] do
+
+            # this_card_id = if Map.has_key?(card, "card_id"), do: card["card_id"], else: ""
             card_exists = Repo.get_by(Card, category: suit["name"], value: card["value"], edition: edition, language: language)
 
-            if card_exists  do
-                # nothing
-            else
+            unless card_exists  do
               misc = if Map.has_key?(card, "misc"), do: card["misc"], else: ""
               card_id = if Map.has_key?(card, "id"), do: card["id"], else: ""
-
+              IO.puts("card_id populate #{card_id}")
+              IO.puts("language populate #{language}")
               Repo.insert!(%Card{
+                suit_id: suit_id,
                 card_id:  card_id,
                 edition: edition,
                 language: language,
@@ -43,14 +46,17 @@ defmodule Copi.CardMigration do
     end
   end
 
-
   defp map_cards(path, language) do
     case YamlElixir.read_from_file(path) do
       {:ok, cards} ->
         edition = cards["meta"]["edition"]
         for suit <- cards["suits"] do
           for card <- suit["cards"] do
-            this_card = Repo.get_by!(Card, category: suit["name"], value: card["value"], edition: edition, language: language)
+             this_card = if card["id"] do
+              Repo.get_by!(Card, card_id: card["id"], edition: edition, language: language)
+             else
+              Repo.get_by!(Card,language: language,  category: suit["name"], value: card["value"], edition: edition )
+             end
 
             this_card =  case edition do
              "ecommerce" -> Ecto.Changeset.change(this_card,

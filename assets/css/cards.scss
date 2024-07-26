@@ -163,13 +163,13 @@ th.numeric, td.numeric {
  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-$authentication-color: #70a6be;
-$authorization-color: #c6b571;
-$data-validation-encoding-color: #92929b;
-$session-management-color: #9ecd90;
-$cryptography-color: #9792c7;
-$cornucopia-color: #405369;
-$wildcard-color: #fccd8f;
+$at-color: #70a6be;
+$az-color: #c6b571;
+$ve-color: #92929b;
+$sm-color: #9ecd90;
+$cr-color: #9792c7;
+$co-color: #405369;
+$wc-color: #fccd8f;
 
 $platform-code-mobile-color: rgb(79, 185, 145);
 $authentication-authorization-mobile-color: rgb(240, 146, 54);
@@ -259,61 +259,61 @@ $wildcard-mobile-color: rgb(251, 182, 124);
   color:$wildcard-mobile-color;
 }
 
-.data-validation-encoding .left-bar {
-  background-color: $data-validation-encoding-color;
+.ve .left-bar {
+  background-color: $ve-color;
 }
 
-.data-validation-encoding .value {
-  color: $data-validation-encoding-color;
+.ve .value {
+  color: $ve-color;
 }
 
-.authentication .left-bar {
-  background-color: $authentication-color;
+.at .left-bar {
+  background-color: $at-color;
 }
 
-.authentication .value {
-  color: $authentication-color;
+.at .value {
+  color: $at-color;
 }
 
-.authorization .left-bar {
-  background-color: $authorization-color;
+.az .left-bar {
+  background-color: $az-color;
 }
 
-.authorization .value {
-  color: $authorization-color;
+.az .value {
+  color: $az-color;
 }
 
-.session-management .left-bar {
-  background-color:$session-management-color;
+.sm .left-bar {
+  background-color:$sm-color;
 }
 
-.session-management .value {
-  color:$session-management-color;
+.sm .value {
+  color:$sm-color;
 }
 
-.cryptography .left-bar {
-  background-color: $cryptography-color;
+.cr .left-bar {
+  background-color: $cr-color;
 }
 
-.cryptography .value {
-  color: $cryptography-color;
+.cr .value {
+  color: $cr-color;
 }
 
-.cornucopia .left-bar {
-  background-color:$cornucopia-color;
+.co .left-bar {
+  background-color:$co-color;
 }
 
-.cornucopia .value {
-  color:$cornucopia-color;
+.co .value {
+  color:$co-color;
 }
 
-.wild-card .left-bar {
-  background-color:$wildcard-color;
+.wc .left-bar {
+  background-color:$wc-color;
 }
 
 
-.wild-card .value {
-  color:$wildcard-color;
+.wc .value {
+  color:$wc-color;
 }
 
 .card .main-content {
@@ -352,32 +352,32 @@ $wildcard-mobile-color: rgb(251, 182, 124);
 
   // 
 
-  &.authentication {
-    background-color: scale-color($authentication-color, $lightness: 75%, $saturation:  -20%);
+  &.at {
+    background-color: scale-color($at-color, $lightness: 75%, $saturation:  -20%);
   }
 
-  &.authorization {
-    background-color: scale-color($authorization-color, $lightness: 75%, $saturation:  -20%);
+  &.az {
+    background-color: scale-color($az-color, $lightness: 75%, $saturation:  -20%);
   }
 
-  &.data-validation-encoding {
-    background-color: scale-color($data-validation-encoding-color, $lightness: 75%, $saturation:  -20%);
+  &.ve {
+    background-color: scale-color($ve-color, $lightness: 75%, $saturation:  -20%);
   }
 
-  &.session-management {
-    background-color: scale-color($session-management-color, $lightness: 75%, $saturation:  -20%);
+  &.sm{
+    background-color: scale-color($sm-color, $lightness: 75%, $saturation:  -20%);
   }
 
-  &.cryptography {
-    background-color: scale-color($cryptography-color, $lightness: 75%, $saturation:  -20%);
+  &.cr {
+    background-color: scale-color($cr-color, $lightness: 75%, $saturation:  -20%);
   }
 
-  &.cornucopia {
-    background-color: scale-color($cornucopia-color, $lightness: 75%, $saturation:  -20%);
+  &.co {
+    background-color: scale-color($co-color, $lightness: 75%, $saturation:  -20%);
   }
 
-  &.wildcard {
-    background-color: scale-color($wildcard-color, $lightness: 75%, $saturation:  -20%);
+  &.wc {
+    background-color: scale-color($wc-color, $lightness: 75%, $saturation:  -20%);
   }
 
   p.value { color: #fff; }

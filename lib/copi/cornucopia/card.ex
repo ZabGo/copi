@@ -19,6 +19,7 @@ defmodule Copi.Cornucopia.Card do
     field :value, :string
     field :version, :string
     field :card_id, :string, default: ""
+    field :suit_id, :string, default: ""
 
     timestamps()
   end
@@ -26,7 +27,7 @@ defmodule Copi.Cornucopia.Card do
   @doc false
   def changeset(card, attrs) do
     card
-    |> cast(attrs, [:category, :value, :description, :misc, :edition, :external_id, :language, :version, :owasp_scp, :owasp_asvs, :owasp_appsensor, :capec, :safecode, :owasp_mastg, :owasp_masvs, :card_id])
+    |> cast(attrs, [:category, :value, :description, :misc, :edition, :external_id, :language, :version, :owasp_scp, :owasp_asvs, :owasp_appsensor, :capec, :safecode, :owasp_mastg, :owasp_masvs, :card_id, :suit_id])
     |> validate_required([:category, :value, :description, :misc, :edition, :external_id, :language, :version, :owasp_scp, :owasp_asvs, :owasp_appsensor, :capec, :safecode, :owasp_mastg, :owasp_masvs])
   end
 end
