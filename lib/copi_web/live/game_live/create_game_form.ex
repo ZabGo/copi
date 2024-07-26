@@ -68,7 +68,8 @@ defmodule CopiWeb.GameLive.CreateGameForm do
       socket.assigns.game
       |> Cornucopia.change_game(game_params)
       |> Map.put(:action, :validate)
-      send(self(), {:update_parent, changeset})
+
+    send(self(), {:update_parent, changeset})
     {:noreply, assign_form(socket, changeset)}
   end
 
@@ -106,24 +107,35 @@ defmodule CopiWeb.GameLive.CreateGameForm do
     end
   end
 
-    def display_language_with_flags(languages) do
-      Enum.map(languages, fn country -> {to_flag_emoji(country), country} end)
-    end
+  def display_language_with_flags(languages) do
+    IO.puts("languages: " <> inspect(languages))
+
+    languages
+    |> Enum.sort()
+    |> Enum.map(fn country ->
+      case country do
+        "EN" -> {"#{to_flag_emoji("GB")} / #{to_flag_emoji("US")}", country}
+        "PT-BR" -> {"#{to_flag_emoji("PT")} / #{to_flag_emoji("BR")} ", country}
+        "NO-NB" -> {to_flag_emoji("NO"), country}
+        _ -> {to_flag_emoji(country), country}
+      end
+    end)
+  end
 
   def to_flag_emoji(code) do
     code
     |> String.upcase()
     |> String.to_charlist()
-    |> Enum.map(&(&1 + 127397))
+    |> Enum.map(&(&1 + 127_397))
     |> to_string()
   end
 
   def get_edition_from_assigns(assigns) do
-    edition = if assigns.form.source.changes == nil || assigns.form.source.changes == %{} do
-      "webapp"
-    else
-      assigns.form.source.changes.edition
-    end
+    edition =
+      if assigns.form.source.changes == nil || assigns.form.source.changes == %{} do
+        "webapp"
+      else
+        assigns.form.source.changes.edition
+      end
   end
-
 end

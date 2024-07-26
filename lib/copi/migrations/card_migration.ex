@@ -23,6 +23,8 @@ defmodule Copi.CardMigration do
             # this_card_id = if Map.has_key?(card, "card_id"), do: card["card_id"], else: ""
             card_exists = Repo.get_by(Card, category: suit["name"], value: card["value"], edition: edition, language: language)
 
+            IO.puts("card: :" <> inspect(card_exists))
+
             unless card_exists  do
               misc = if Map.has_key?(card, "misc"), do: card["misc"], else: ""
               card_id = if Map.has_key?(card, "id"), do: card["id"], else: ""
