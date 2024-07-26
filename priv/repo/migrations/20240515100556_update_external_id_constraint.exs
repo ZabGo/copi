@@ -6,6 +6,6 @@ defmodule Copi.Repo.Migrations.UpdateExternalIdConstraint do
   def change do
     drop index("cards", [:external_id])
 
-    create unique_index("cards", [:external_id, :version])
+    create unique_index("cards", [:external_id, :version, :language])
   end
 end

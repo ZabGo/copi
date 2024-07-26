@@ -2,11 +2,11 @@ defmodule Copi.CardMigration do
   alias Copi.Repo
   alias Copi.Cornucopia.Card
 
-  def add_cards_to_database(cards_file_path, mappings_file_path)do
+  def add_cards_to_database(cards_file_path, mappings_file_path, language \\ "EN")do
     populate_cards cards_file_path
 
     if mappings_file_path do
-      map_cards mappings_file_path
+      map_cards(mappings_file_path, language)
     end
   end
 
@@ -42,13 +42,13 @@ defmodule Copi.CardMigration do
   end
 
 
-  defp map_cards(path) do
+  defp map_cards(path, language) do
     case YamlElixir.read_from_file(path) do
       {:ok, cards} ->
         edition = cards["meta"]["edition"]
         for suit <- cards["suits"] do
           for card <- suit["cards"] do
-            this_card = Repo.get_by!(Card, category: suit["name"], value: card["value"], edition: edition)
+            this_card = Repo.get_by!(Card, category: suit["name"], value: card["value"], edition: edition, language: language)
 
             this_card =  case edition do
              "ecommerce" -> Ecto.Changeset.change(this_card,

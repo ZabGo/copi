@@ -40,7 +40,7 @@ defmodule CopiWeb.GameLive.CreateGameForm do
           field={@form[:language]}
           type="select"
           label={gettext "Choose your language:"}
-          options={display_language_with_flags(["gb", "fr", "es", "pt"])}
+          options={display_language_with_flags(Cornucopia.get_available_language(get_edition_from_assigns(assigns)))}
           >
         </.input>
       </div>
@@ -119,6 +119,14 @@ defmodule CopiWeb.GameLive.CreateGameForm do
     |> String.to_charlist()
     |> Enum.map(&(&1 + 127397))
     |> to_string()
+  end
+
+  def get_edition_from_assigns(assigns) do
+    edition = if assigns.form.source.changes == nil || assigns.form.source.changes == %{} do
+      "webapp"
+    else
+      assigns.form.source.changes.edition
+    end
   end
 
 end

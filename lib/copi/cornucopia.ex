@@ -7,6 +7,8 @@ defmodule Copi.Cornucopia do
   alias Copi.Repo
 
   alias Copi.Cornucopia.Game
+  alias Copi.Cornucopia.Player
+  alias Copi.Cornucopia.Card
 
   @doc """
   Returns the list of games.
@@ -102,7 +104,16 @@ defmodule Copi.Cornucopia do
     Game.changeset(game, attrs)
   end
 
-  alias Copi.Cornucopia.Player
+  def get_available_language(selected_edition) do
+    database_query = from c in Card,
+    where: c.edition == ^selected_edition,
+    select: c.language,
+    distinct: true
+
+    Repo.all(database_query)
+  end
+
+
 
   @doc """
   Returns the list of players.
@@ -200,7 +211,7 @@ defmodule Copi.Cornucopia do
     Player.changeset(player, attrs)
   end
 
-  alias Copi.Cornucopia.Card
+
 
   @doc """
   Returns the list of cards.
