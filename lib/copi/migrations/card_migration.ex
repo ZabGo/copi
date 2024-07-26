@@ -24,8 +24,10 @@ defmodule Copi.CardMigration do
                 # nothing
             else
               misc = if Map.has_key?(card, "misc"), do: card["misc"], else: ""
+              card_id = if Map.has_key?(card, "id"), do: card["id"], else: ""
 
               Repo.insert!(%Card{
+                card_id:  card_id,
                 edition: edition,
                 language: language,
                 version: version,
